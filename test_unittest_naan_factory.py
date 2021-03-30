@@ -27,12 +27,3 @@ class NaanFactoryTest(unittest.TestCase):
         self.assertEqual(self.naan.run_factory("water", "flour"), "naan")
         # this test is checking if all the program works properly. We make dough and bake dough to get naan as a result
 
-    # Let's create three tests to check if incorrect input for all of them returns the correct answer(mistake)
-    def tes_make_dough_wrong_option(self):
-        self.assertEqual(self.naan.make_dough("bread", "eggs"), "wrong words")
-
-    def tes_bake_dough_wrong_option(self):
-        self.assertEqual(self.naan.bake_dough("bread"), "wrong words")
-
-    def tes_run_factory_wrong_option(self):
-        self.assertEqual(self.naan.run_factory("bread", "eggs"), "wrong words")
